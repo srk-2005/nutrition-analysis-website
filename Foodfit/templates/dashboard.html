@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title -->
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>User Dashboard</h1>
+
+    <!-- Links to other modules -->
+    <h2>Modules</h2>
+    <p><a href="/food_intake">Food Intake Module</a></p>
+    <p><a href="/search">Nutritional Information Search</a></p>
+    
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li class="alert">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

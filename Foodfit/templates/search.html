@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritional Information Search</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>Nutritional Information Search</h1>
+    
+    <form method="POST" action="/search">
+        <label for="food_name">Food Name: </label>
+        <input type="text" id="food_name" name="food_name" required>
+        
+        <label for="quantity">Quantity (grams):</label>
+        <input type="number" id="quantity" name="quantity" required>
+        
+        <button type="submit">Search</button>
+    </form>
+    
+    {% if result %}
+    <h2>Results:</h2>
+    <p>Carbs: {{ result.carbs }} grams</p>
+    <p>Proteins: {{ result.proteins }} grams</p>
+    <p>Fats: {{ result.fats }} grams</p>
+    {% endif %}
+    
+    <a href="/">Back to Home</a>
+</body>
+</html>

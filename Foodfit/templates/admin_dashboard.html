@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title -->
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+
+    <!-- Links to other modules -->
+    <h2>Admin Options</h2>
+    <p><a href="/admin_food_entry">Admin Food Entry Point</a></p>
+    <!--<p><a href="/search">Nutritional Information Search</a></p>-->
+    
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li class="alert">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

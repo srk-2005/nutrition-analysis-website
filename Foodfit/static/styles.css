@@ -1,0 +1,95 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color:rgb(0, 88, 5);
+    font-weight: bold;
+    background-color: #3db63d;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    color: #ffffff;
+    background-color: #b37400;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+}
+
+h3 {
+    color: rgb(0, 88, 5);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #ca9521;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #b37400;
+}
+
+a {
+    color: #9900ff;
+    font-size: 20px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
